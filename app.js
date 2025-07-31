@@ -14,11 +14,11 @@ let mockupCount = parseInt(localStorage.getItem('mockupCount') || '0');
 const planStatus = document.getElementById('plan-status');
 function updateStatus() {
   if (isLifetimeUser) {
-    planStatus.innerText = "âœ” Lifetime User â€“ mockups ilimitados";
+    planStatus.innerText = "✔ Lifetime User – mockups ilimitados";
     planStatus.style.background = "#d1e7dd";
     planStatus.style.color = "#0f5132";
   } else {
-    planStatus.innerText = `ðŸ”’ Free User â€“ ${5 - mockupCount} mockups restantes`;
+    planStatus.innerText = `🔒 Free User – ${5 - mockupCount} mockups restantes`;
   }
 }
 updateStatus();
@@ -57,7 +57,7 @@ document.querySelectorAll('.mockup-thumb').forEach((el) => {
   });
 });
 
-// BotÃ£o de download
+// Botão de download
 document.getElementById('download-btn').addEventListener('click', function () {
   if (!isLifetimeUser && mockupCount >= 5) {
     alert("Limite gratuito atingido. Atualize para plano Lifetime.");
