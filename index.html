@@ -1,1 +1,40 @@
-<!DOCTYPE html><html><head><title>PlaceLogo</title></head><body><h1>PlaceLogo App</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlaceLogo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PlaceLogo</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How it Works</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <div id="plan-status" class="plan-indicator"></div>
+
+  <main>
+    <input type="file" id="logo-upload" accept="image/*" />
+    <div class="mockup-gallery">
+      <img src="assets/tshirt1.png" class="mockup-thumb" data-src="assets/tshirt1.png" />
+      <img src="assets/tshirt2.png" class="mockup-thumb" data-src="assets/tshirt2.png" />
+    </div>
+    <canvas id="tshirt-canvas" width="1200" height="1200"></canvas>
+    <button id="download-btn">Download</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PlaceLogo</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
