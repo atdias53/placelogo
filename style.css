@@ -1,1 +1,69 @@
-body { font-family: sans-serif; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+header {
+  background: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #555;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.mockup-gallery {
+  margin-top: 1rem;
+}
+
+.mockup-thumb {
+  width: 100px;
+  height: auto;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.mockup-thumb:hover {
+  border-color: #666;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.plan-indicator {
+  background: #eee;
+  color: #222;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
